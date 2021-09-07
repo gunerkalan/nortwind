@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -124,5 +125,8 @@
       }
     }
   },
-  "defaultProject": "nortwind"
+  "defaultProject": "nortwind",
+  "cli": {
+    "analytics": "76928c06-f32c-4eba-a280-638b682851ad"
+  }
 }

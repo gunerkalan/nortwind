@@ -1,0 +1,17 @@
+<div *ngIf="dataLoaded==false" class="spinner-border text-dark" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<table *ngIf="dataLoaded!=false" class="table table-striped">
+  <thead>
+    <th>Id</th>
+    <th>User Id</th>
+    <th>Title</th>
+    <th>Completed</th>
+  </thead>
+  <tr *ngFor="let todo of todos">
+    <td>{{todo.id}}</td>
+    <td>{{todo.userId}}</td>
+    <td>{{todo.title}}</td>
+    <td>{{todo.completed}}</td>
+  </tr>
+</table>
